@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	padding: 10px;
+	font-family: "Montserrat", sans-serif;
+}
+
+/*CONTAINER*/
+.card {
+	padding: 20px;
+	color: #fff;
+	border-radius: 20px;
+	background-image: radial-gradient(
+		circle farthest-corner at 0.2% 0.5%,
+		rgba(68, 36, 164, 1) 3.7%,
+		rgba(84, 212, 228, 1) 92.7%
+	);
+	width: 100%;
+	max-width: 450px;
+	margin: auto;
+	text-align: center;
+	box-shadow: 10px 10px 60px gray;
+}
+
+@media only screen and (max-width: 450px) {
+	body {
+		height: 100vh;
+		padding: 0;
+	}
+
+	.card {
+		border-radius: 0;
+		height: 100vh;
+	}
+
+	footer {
+		display: none;
+	}
+}
+
+/*IMAGE SIZE*/
+.weather-highlight img {
+	width: 120px;
+}
+.col img {
+	width: 40px;
+}
+
+.weather-info-container {
+	/*	display: none;*/
+}
+
+/* SEARCH */
+.search {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.search .userInput {
+	width: 85%;
+	height: 40px;
+	padding: 10px 15px;
+	outline: none;
+	border: none;
+	border-radius: 18px;
+	font-size: 16px;
+}
+
+.search .userInput::placeholder {
+	font-size: 16px;
+}
+.search button {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	outline: none;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.search button i {
+	font-size: large;
+}
+.search button:hover {
+	background-color: yellow;
+}
+
+/*HIGHLIGHTS*/
+.weather-highlight,
+.weather-detail {
+	padding: 20px 0;
+}
+
+.temp {
+	font-size: 4rem;
+	font-weight: 800;
+	text-shadow: 10px 10px 70px lightgreen;
+}
+
+.main {
+	font-size: 1.5rem;
+	color: yellow;
+	padding: 8px 0;
+	text-transform: capitalize;
+}
+
+.city {
+	font-size: 1.5rem;
+}
+
+/*WEATHER DETAIL*/
+.weather-detail {
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.col {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-align: left;
+}
+
+.col div p:first-child {
+	color: yellow;
+	font-weight: 500;
+	font-size: 1.3rem;
+	margin-bottom: 5px;
+}
+
+.tips {
+	text-align: left;
+	padding: 10px;
+}
+
+.tips p:first-child {
+	font-weight: bold;
+	color: yellow;
+	padding: 10px 0;
+}
+
+.tips p:last-child {
+	color: ghostwhite;
+}
+
+.weather-info-container {
+	display: none;
+}
+
+.error {
+	text-align: left;
+	padding-left: 10px;
+	color: yellow;
+	display: none;
+	font-weight: 500;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+footer {
+	padding: 50px 0;
+	text-align: center;
+	color: grey;
+}

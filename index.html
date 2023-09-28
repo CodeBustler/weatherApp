@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Weather App | 58/100 Projects By CodeBustler</title>
+		<link rel="icon" type="image/png" href="./img/html.png" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<script defer src="./script.js" type="module"></script>
+		<script
+			src="https://kit.fontawesome.com/81d73e8e4d.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- CONTAINER -->
+		<div class="card">
+			<!-- SEARCH -->
+			<div class="search">
+				<input
+					type="text"
+					class="userInput"
+					placeholder="Enter City Name"
+				/>
+				<button class="searchBTN">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>
+			<div class="error">
+				<p>Please enter valid city name</p>
+			</div>
+			<!-- WEATHER -->
+			<div class="weather-info-container">
+				<!-- TEMP & CITY -->
+				<div class="weather-highlight">
+					<img src="./img/cloudy.png" class="weather-icon" />
+					<p class="temp">22°C</p>
+					<div class="main">Clouds</div>
+					<p class="city">Hyderabad</p>
+				</div>
+
+				<!-- WEATHER DETAILS -->
+				<div class="weather-detail">
+					<div class="col">
+						<img src="./img/humidity.png" alt="" />
+						<div>
+							<p class="humidity">66%</p>
+							<p>Humidity</p>
+						</div>
+					</div>
+					<div class="col">
+						<img src="./img/wind.png" alt="" />
+						<div>
+							<p class="wind">5.3 km/h</p>
+							<p>Wind Speed</p>
+						</div>
+					</div>
+				</div>
+				<div class="tips">
+					<p>
+						<i class="fa-regular fa-lightbulb"></i> Tip for the day
+						:
+					</p>
+					<p class="tip-list">
+						To protect yourself during extreme heat, stay hydrated
+						by drinking plenty of water.
+					</p>
+				</div>
+			</div>
+		</div>
+		<footer>By CodeBustler</footer>
+	</body>
+</html>
